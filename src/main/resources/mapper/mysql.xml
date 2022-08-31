@@ -6,4 +6,15 @@
     <select id="getUserCount" resultType="Integer">
         select count(*) from user;
     </select>
+
+
+    <select id="addUser" parameterType="com.house.entity.User">
+       INSERT INTO `user`( `name`, `age`, `user_name`, `password`)
+       VALUES ( #{name}, #{age}, #{userName}, #{password});
+    </select>
+
+
+    <select id="deleteUser" parameterType="Integer" >
+       delete from user where id  = #{userId}
+    </select>
 </mapper>
