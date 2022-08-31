@@ -1,0 +1,21 @@
+server:
+  port: 8888
+
+logging:
+  file:
+    path: logs/mylog.log
+
+spring:
+  application:
+    name: mytest
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/house
+    username: root
+    password: 123456
+
+mybatis:
+  type-aliases-package: com.house.entity
+  #mybatis的映射文件存储路径
+  mapper-locations:
+    - mapper/*
