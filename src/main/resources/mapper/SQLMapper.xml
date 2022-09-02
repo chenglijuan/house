@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.house.entity">
+    <select id="loginCase" resultType="com.house.entity.LoginCases" parameterType="Integer">
+        select * from logincase where id =#{id};
+    </select>
+
+    <select id="escrowAgreementList" resultType="com.house.entity.EscrowAgreementListCases" parameterType="Integer">
+        select * from escrowagreementlistcases where id =#{id};
+    </select>
+
+
+</mapper>

@@ -20,6 +20,7 @@
 <!--    注册映射文件：java对象与数据库之间的xml文件路径-->
     <mappers>
         <mapper resource="mapper/mysql.xml"></mapper>
+        <mapper resource="mapper/SQLMapper.xml"></mapper>
     </mappers>
 
 </configuration>

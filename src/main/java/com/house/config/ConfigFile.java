@@ -18,10 +18,21 @@ public class ConfigFile {
 //        System.out.println(bundle.getString("test.url"));
 //    }
 
+    public static String getValue(String name){
+        if("interfaceVersion".equals(name)){
+            return bundle.getString("interfaceVersion");
+        }else {
+            return bundle.getString("requestTime");
+        }
+
+    }
+
     public static String getUrl(String urlName){
 
         if("loginUrl".equals(urlName)){
             return bundle.getString("base.url") + bundle.getString("base.login.url");
+        }else if("EscrowAgreementList".equals(urlName)){
+            return bundle.getString("base.url") + bundle.getString("base.getEscrowAgreementList");
         }
         return null;
     }

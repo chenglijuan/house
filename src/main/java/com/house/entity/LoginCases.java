@@ -18,4 +18,8 @@ public class LoginCases {
 
     private String expected;
 
+    private String interfaceVersion;
+
+    private String requestTime;
+
 }

@@ -10,7 +10,11 @@ public class TestConfig {
 
     public static String loginUrl;
 
-//    public static String loginUrl;
+    public static String getEscrowAgreementListUrl;
+
+    public static String interfaceVersion;
+
+    public static String requestTime;
 
 
 
