@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="suittest">
+
+    <test name="test1">
+        <classes>
+            <class name="com.house.suite.SuiteConfig"/>
+            <class name="com.house.suite.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="test2">
+        <classes>
+            <class name="com.house.suite.SuiteConfig"/>
+            <class name="com.house.suite.PayTest"/>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="com.house.util.ExtentTestNGIReporterListener"/>
+
+    </listeners>
+
+</suite>

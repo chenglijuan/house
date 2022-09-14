@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="suitetest">
+
+    <test name="param">
+        <classes>
+            <parameter name="name" value="zhangsan"/>
+            <parameter name="age" value="10"/>
+            <class name="com.house.util.param.ParamTest1"/>
+        </classes>
+    </test>
+
+    <!--    <test name="runAll">-->
+    <!--        <classes>-->
+    <!--            <class name="com.house.util.group.GroupsOnClass1"/>-->
+    <!--            <class name="com.house.util.group.GroupsOnClass2"/>-->
+    <!--            <class name="com.house.util.group.GroupsOnClass3"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="onlyRunStu">-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="stu"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.house.util.group.GroupsOnClass1"/>-->
+    <!--            <class name="com.house.util.group.GroupsOnClass2"/>-->
+    <!--            <class name="com.house.util.group.GroupsOnClass3"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+</suite>

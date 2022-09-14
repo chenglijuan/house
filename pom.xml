@@ -120,6 +120,7 @@
     <build>
         <plugins>
             <plugin>
+<!--                maven的打包插件-->
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
