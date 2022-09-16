@@ -16,6 +16,9 @@ public class TestConfig {
 
     public static String requestTime;
 
+    //新增托管账号
+    public static String tgxyBankAccountEscrowedAdd;
+
 
 
 }

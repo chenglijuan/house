@@ -21,6 +21,7 @@
     <mappers>
         <mapper resource="mapper/mysql.xml"></mapper>
         <mapper resource="mapper/SQLMapper.xml"></mapper>
+        <mapper resource="mapper/bankaccountescaddcase.xml"></mapper>
     </mappers>
 
 </configuration>

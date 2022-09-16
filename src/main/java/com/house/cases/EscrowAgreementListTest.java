@@ -19,7 +19,7 @@ import java.util.List;
  */
 public class EscrowAgreementListTest {
 
-    @Test(dependsOnGroups = "loginsuccess",description = "获取合作协议列表")
+    @Test(dependsOnGroups = "loginsuccess",description = "获取合作协议列表" ,enabled = false)
     public void getListInfo() throws Exception {
 
         SqlSession sqlSession = DatabaseUtil.getSqlSession();
@@ -34,9 +34,6 @@ public class EscrowAgreementListTest {
         //根据测试用例中配置的参数发起一个请求
         String result = HttpClientUtils.postWithParam(TestConfig.getEscrowAgreementListUrl,nvps);
 
-        System.out.println("getListInfo============");
-        System.out.println(cases);
-        System.out.println(result);
 
     }
 

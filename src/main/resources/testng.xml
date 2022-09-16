@@ -15,6 +15,7 @@
                 </methods>
             </class>
 
+            <class name="com.house.cases.BankAccountEscrowedAddTest"/>
         </classes>
     </test>
     <listeners>

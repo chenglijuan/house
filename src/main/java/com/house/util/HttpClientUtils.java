@@ -1,14 +1,11 @@
 package com.house.util;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.client.CookieStore;
 
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.BasicCookieStore;
@@ -51,9 +48,7 @@ public class HttpClientUtils {
         try {
             int statusCode = response.getStatusLine().getStatusCode();
             result = EntityUtils.toString(response.getEntity());
-            System.out.println(statusCode);
-            System.out.println(result);
-//            //添加断言
+//            //添加断言查看返回码是否为200
             Assert.assertEquals(200, statusCode);
         } catch (Exception e) {
             e.printStackTrace();

@@ -11,5 +11,9 @@
         select * from escrowagreementlistcases where id =#{id};
     </select>
 
+    <select id="loginCaseList" resultType="com.house.entity.LoginCases" >
+        select * from logincase;
+    </select>
+
 
 </mapper>

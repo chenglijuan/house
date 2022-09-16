@@ -33,6 +33,8 @@ public class ConfigFile {
             return bundle.getString("base.url") + bundle.getString("base.login.url");
         }else if("EscrowAgreementList".equals(urlName)){
             return bundle.getString("base.url") + bundle.getString("base.getEscrowAgreementList");
+        }else if("tgxyBankAccountEscrowedAdd".equals(urlName)){
+            return bundle.getString("base.url") + bundle.getString("base.TgxyBankAccountEscrowedAdd");
         }
         return null;
     }
